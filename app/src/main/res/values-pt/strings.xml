@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MyQuizz</string>
+    <string name="question1">Quantas questões tem esse Quiz?</string>
+    <string name="answerRadio1">1</string>
+    <string name="answerRadio2">2</string>
+    <string name="answerRadio3">3</string>
+    <string name="answerRadio4">4</string>
+    <string name="question2">Qual é o nome desse aplicativo?</string>
+    <string name="question3">Quais as linguas compativeis nesse aplicativo?</string>
+    <string name="answerCheckBox1">Ingles</string>
+    <string name="answerCheckBox2">Portugues</string>
+    <string name="answerCheckBox3">Frances</string>
+    <string name="answerCheckBox4">Holandes</string>
+    <string name="question4">Qual é a maneira orientada a objetos para se tornar rico?</string>
+    <string name="button">Enviar</string>
+    <string name="sorry">Você errou as 4 questões, não se precipite no desespero, levante a cabeça e tente novamente.</string>
+    <plurals name="question">
+        <item quantity="one">Você acertou somente %d pergunta.</item>
+        <item quantity="other">Parabens, você acertou %d perguntas.</item>
+    </plurals>
+    <string name="answerQuestionFour">herança</string>
+    <string name="answerQuestionTwo">myquizz</string>
+</resources>

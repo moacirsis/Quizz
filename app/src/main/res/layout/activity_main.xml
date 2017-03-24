@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools">
+        <data>
+            <variable name="myquiz" type="com.interaxa.myquizz.quiz" />
+        </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:clipToPadding="true"
+        android:animateLayoutChanges="false">
+
+    <LinearLayout
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"
+        tools:context="com.interaxa.myquizz.MainActivity"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/question"
+            android:text="@string/question1" />
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RadioButton
+                android:text="@string/answerRadio1"
+                android:checked="@={myquiz.radioOne}"
+                style="@style/radio_check" />
+            <RadioButton
+                android:checked="@={myquiz.radioTwo}"
+                android:text="@string/answerRadio2"
+            style="@style/radio_check"  />
+            <RadioButton
+                android:text="@string/answerRadio3"
+                android:checked="@={myquiz.radioThree}"
+                style="@style/radio_check"  />
+            <RadioButton
+                android:text="@string/answerRadio4"
+                android:checked="@={myquiz.radioFour}"
+                style="@style/radio_check"  />
+
+        </RadioGroup>
+
+        <TextView
+            style="@style/question"
+            android:text="@string/question2" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="@={myquiz.answerTwo}" />
+
+        <TextView
+            style="@style/question"
+            android:text="@string/question4" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="@={myquiz.answerFour}" />
+
+        <TextView
+            style="@style/question"
+            android:text="@string/question3" />
+        <CheckBox
+            android:text="@string/answerCheckBox1"
+            android:checked="@={myquiz.checkBoxOne}"
+            style="@style/radio_check"            />
+        <CheckBox
+            android:text="@string/answerCheckBox2"
+            android:checked="@={myquiz.checkBoxTwo}"
+            style="@style/radio_check"/>
+        <CheckBox
+            android:text="@string/answerCheckBox3"
+            android:checked="@={myquiz.checkBoxThree}"
+            style="@style/radio_check" />
+        <CheckBox
+            android:text="@string/answerCheckBox4"
+            android:checked="@={myquiz.checkBoxFour}"
+            style="@style/radio_check" />
+
+        <Button
+            android:backgroundTint="@color/colorAccent"
+            android:textColor="@android:color/white"
+            android:text="@string/button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:onClick="toastMyQuizz" />
+
+    </LinearLayout>
+    </ScrollView>
+    </layout>

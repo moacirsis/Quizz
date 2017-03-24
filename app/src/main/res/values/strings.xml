@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">MyQuizz</string>
+    <string name="question1">How many questions have this quiz?</string>
+    <string name="answerRadio1">"1 "</string>
+    <string name="answerRadio2">2</string>
+    <string name="answerRadio3">3</string>
+    <string name="answerRadio4">4</string>
+    <string name="question2">What is the name of this app?</string>
+    <string name="question3">Which languages is this quiz compatible?</string>
+    <string name="answerCheckBox1">English</string>
+    <string name="answerCheckBox2">Portuguese</string>
+    <string name="answerCheckBox3">French</string>
+    <string name="answerCheckBox4">Dutch</string>
+    <string name="question4">What is the object-oriented way to become rich?</string>
+    <string name="button">Send</string>
+    <string name="sorry">You missed the 4 questions, do not rush into despair, raise your head and try again.</string>
+    <plurals name="question">
+        <item quantity="one">You only hit %d question.</item>
+        <item quantity="other">Congratz, you hit %d questions.</item>
+    </plurals>
+    <string name="answerQuestionTwo">myquizz</string>
+    <string name="answerQuestionFour">inheritance</string>
+</resources>
